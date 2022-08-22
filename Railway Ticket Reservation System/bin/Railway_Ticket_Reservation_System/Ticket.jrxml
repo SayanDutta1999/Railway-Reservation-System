@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ticket" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="63fa3b6e-e5b2-493d-a6f9-ba774ed3f6aa">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Railway ticket reservation"/>
+	<parameter name="passengersId" class="java.lang.Integer" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[select  
+PASSENGER_ID ,  PASSENGERS_NAME, AGE, MOBILE_NO, AADHAAR_NO, STATE, TRAIN_NO, 
+TRAIN_NAME, SRC, DESTINATION, DEPARTURE_TIME, AVAIL_DATE, TICKET_PRICE, TICKET_NO, TICKET_CATEGORY
+ from t_passenger  where  PASSENGER_ID =  $P{passengersId}]]>
+	</queryString>
+	<field name="PASSENGER_ID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="PASSENGER_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PASSENGER_ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="PASSENGERS_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PASSENGERS_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="PASSENGERS_NAME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="AGE" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="AGE"/>
+		<property name="com.jaspersoft.studio.field.label" value="AGE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="MOBILE_NO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MOBILE_NO"/>
+		<property name="com.jaspersoft.studio.field.label" value="MOBILE_NO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="AADHAAR_NO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="AADHAAR_NO"/>
+		<property name="com.jaspersoft.studio.field.label" value="AADHAAR_NO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="STATE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="STATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="STATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="TRAIN_NO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TRAIN_NO"/>
+		<property name="com.jaspersoft.studio.field.label" value="TRAIN_NO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="TRAIN_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TRAIN_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="TRAIN_NAME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="SRC" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SRC"/>
+		<property name="com.jaspersoft.studio.field.label" value="SRC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="DESTINATION" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DESTINATION"/>
+		<property name="com.jaspersoft.studio.field.label" value="DESTINATION"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="DEPARTURE_TIME" class="java.sql.Time">
+		<property name="com.jaspersoft.studio.field.name" value="DEPARTURE_TIME"/>
+		<property name="com.jaspersoft.studio.field.label" value="DEPARTURE_TIME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="AVAIL_DATE" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="AVAIL_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="AVAIL_DATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="TICKET_PRICE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TICKET_PRICE"/>
+		<property name="com.jaspersoft.studio.field.label" value="TICKET_PRICE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="TICKET_NO" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="TICKET_NO"/>
+		<property name="com.jaspersoft.studio.field.label" value="TICKET_NO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<field name="TICKET_CATEGORY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TICKET_CATEGORY"/>
+		<property name="com.jaspersoft.studio.field.label" value="TICKET_CATEGORY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t_passenger"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="0" width="841" height="81" uuid="af02f3c2-8d1c-493f-a91b-89eb7b2c6276"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="251" y="30" width="300" height="30" uuid="0339107d-6714-49e4-ad0a-67030b215acc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TICKET]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="239" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="6" width="841" height="224" uuid="d965e1d7-5602-47c1-9c80-a7940429fbbc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="36" width="100" height="30" uuid="ec063918-bc70-4b9d-b387-ef56ee4d21de"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ticket No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="100" width="100" height="30" uuid="7251ca0c-6250-451b-baa0-de1921badde9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="160" width="100" height="30" uuid="a4de88d6-036a-4d6f-acda-c8bcefc265f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="36" width="100" height="30" uuid="c81203e3-34aa-415d-9ab3-a14882d62985"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ticket Price]]></text>
+			</staticText>
+			<line>
+				<reportElement x="305" y="80" width="190" height="1" uuid="c6fd494b-5dcc-4d0b-9fe2-305ae75d53b2"/>
+			</line>
+			<staticText>
+				<reportElement x="340" y="90" width="40" height="30" uuid="7e0f2830-f4f1-42d2-8109-da01f14de56b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="36" width="40" height="30" uuid="8de40e5c-df4e-4d0b-9e8a-946bf037140d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="100" width="100" height="30" uuid="f152edf9-07b6-416c-8f5b-2d0e574220ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Train Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="160" width="100" height="30" uuid="22002816-3bad-4ce6-87b8-678093d27b00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Train No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="190" width="100" height="30" uuid="7fc3044c-2054-417e-b2e7-15c878645886"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ticket Type]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="165" y="34" width="100" height="30" uuid="b3a88173-77bc-4ae3-87f7-305459bd1f18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TICKET_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="103" width="100" height="30" uuid="852ec89a-152c-44e8-9501-7db4007f138c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AVAIL_DATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="160" width="100" height="30" uuid="aa7f4e6a-0175-4918-af05-25bba34f8b75"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DEPARTURE_TIME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="90" width="61" height="30" uuid="00b2fe77-d1f4-4c44-af84-7d3acd80f1b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TICKET_PRICE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="190" width="100" height="30" uuid="a93387e9-e44f-42ea-8719-1ecd112b9797"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TICKET_CATEGORY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="34" width="100" height="30" uuid="d338fa76-9b61-4f51-bf92-c2a79ba8caad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SRC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="36" width="100" height="30" uuid="9d3f5766-b5aa-4147-80f9-62a6bb38437c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESTINATION}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="100" width="140" height="30" uuid="ed38c579-8ff4-43c0-8388-fd5aa77ca400"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TRAIN_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="160" width="140" height="30" uuid="648da00d-6406-4f68-b025-7914d2bb4da8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TRAIN_NO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="180" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="80" width="130" height="30" uuid="4c95e975-900f-472b-8bf0-97d75f1b3876"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Passenger Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="40" y="30" width="100" height="30" uuid="d5b726b0-353b-4351-9994-013ec7fcf0ff"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Passenger ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="130" width="60" height="30" uuid="611b6e4b-724b-48b4-bd50-670ac98d9965"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="440" y="30" width="100" height="30" uuid="9a5f97cf-bb25-444b-8478-d3c027c2417a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Moblie No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="440" y="80" width="100" height="30" uuid="c779460c-dfc7-4013-9739-705472f8c80a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aadhaar No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="440" y="130" width="100" height="30" uuid="b5517218-b6aa-48c3-ae4e-247ce77d7bd6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="31" width="100" height="30" uuid="f87f7793-3281-4967-9b49-eaf0398c49e9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PASSENGER_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="80" width="100" height="30" uuid="6f2891fd-8f2d-4d0a-97ca-b161796118c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PASSENGERS_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="130" width="100" height="30" uuid="c6f5d168-5e7a-442e-bc02-97994647f310"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AGE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="590" y="31" width="100" height="30" uuid="6de450b1-777e-454f-ab37-7cdc623ddb86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MOBILE_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="590" y="80" width="100" height="30" uuid="44ec06d2-4346-4a13-9c2b-c779b4bc392c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AADHAAR_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="590" y="130" width="100" height="30" uuid="a28623ca-ad44-4f19-9dfc-c63849d42d22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{STATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="140" width="100" height="30" uuid="d96e13eb-659a-43e8-ba96-3b3335206dcd"/>
+				<textFieldExpression><![CDATA[$P{passengersId}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
